@@ -14,5 +14,5 @@ properties([
     ])
 ])
 loadOpenVinoLibrary {
-    entrypoint(this)
+    //entrypoint(this)
 }
