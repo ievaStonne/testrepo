@@ -7,6 +7,8 @@ properties([
         triggerPhrase: 'ReBuild',
         onlyTriggerPhrase: true,
         useGitHubHooks: false,
+        orgslist: 'openvinotoolkit',
+        allowMembersOfWhitelistedOrgsAsAdmin: true,
     ]]),
     [
         $class: 'GithubProjectProperty',
