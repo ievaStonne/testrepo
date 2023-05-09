@@ -7,7 +7,12 @@ properties([
         triggerPhrase: 'ReBuild',
         onlyTriggerPhrase: true,
         useGitHubHooks: false,
-    ]])
+    ]]),
+    [
+        $class: 'GithubProjectProperty',
+        displayName: '',
+        projectUrlStr: 'https://github.com/akladiev/testrepo.git'
+    ]
 ])
 
 println "Hello world"
