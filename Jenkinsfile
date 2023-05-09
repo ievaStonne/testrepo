@@ -17,3 +17,4 @@ properties([
     ])
 ])
 
+println "Hello world"
