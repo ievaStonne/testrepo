@@ -1,19 +1,13 @@
 #!groovy
 
-job('example') {
-    triggers {
-        githubPullRequest {
-            triggerPhrase('OK to test')
-            onlyTriggerPhrase()
-        }
-    }
-    stages {
-        stage('test') {
-            steps {
-                script {
-                    println "hello"
-                }
-            }
-        }
-    }
-}
+properties([
+    pipelineTriggers([[
+        $class: 'org.jenkinsci.plugins.ghprb.GhprbTrigger',
+        cron: '',
+        triggerPhrase: 'ReBuild',
+        onlyTriggerPhrase: true,
+        useGitHubHooks: false,
+    ]])
+])
+
+println "Hello world"
