@@ -11,7 +11,7 @@ properties([
     [
         $class: 'GithubProjectProperty',
         displayName: '',
-        projectUrlStr: 'https://github.com/akladiev/testrepo.git'
+        projectUrlStr: 'https://github.com/akladiev/testrepo'
     ]
 ])
 
